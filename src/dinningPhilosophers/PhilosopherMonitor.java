@@ -17,7 +17,6 @@ public class PhilosopherMonitor implements Runnable {
 	
 	private void requestToEat() throws InterruptedException {
 		SolutionMonitor.requestToEat(id);
-		eat();
 	}
 	
 	public void eat() throws InterruptedException {

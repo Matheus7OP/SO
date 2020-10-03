@@ -32,7 +32,7 @@ public class SolutionMonitor {
 		}
 	}
 	
-	public static synchronized void requestToEat(int i) throws InterruptedException {
+	public static void requestToEat(int i) throws InterruptedException {
 		if(getLeft(i).isEating() || getRight(i).isEating()) { 
 			synchronized (philosophers[i]) {
 				philosophers[i].wait();
