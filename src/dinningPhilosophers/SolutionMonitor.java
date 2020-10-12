@@ -38,7 +38,6 @@ public class SolutionMonitor {
 				philosophers[i].wait();
 			} 
 		}
-		else philosophers[i].eat();
 	}
 	
 	public static void start() {
